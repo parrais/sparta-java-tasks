@@ -20,8 +20,8 @@ Will be a whole number from zero into the hundreds
 
 f) A telephone number, including area code
 String
-Although numeric, this is a string of characters - more likely to concatenate/split (area code/international)
-and leading zero may matter
+Although numeric, this is a string of characters - more likely to concatenate/split (area code/international),
+may have special characters, and leading zero may matter
 
 g) A dress size
 byte
