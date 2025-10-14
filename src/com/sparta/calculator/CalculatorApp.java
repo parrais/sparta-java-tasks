@@ -2,10 +2,10 @@ package com.sparta.calculator;
 
 public class CalculatorApp {
     public static void main(String[] args) {
-        int numerator = 15;
-        int denominator = 10;
+        double numerator = Double.parseDouble(args[0]);
+        double denominator = Double.parseDouble(args[1]);
 
-        float result = (float) numerator / (float) denominator;
+        double result = numerator / denominator;
 
         System.out.println(result);
     }
