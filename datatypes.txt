@@ -1,21 +1,21 @@
 a) A company's profit
-float
-May need 2 decimals (currency)
+double
+Need decimals, large numbers, and precision
 
 b) A person's weight
-float
-May need decimals of a kg
+int
+grams!
 
 c) A book title
 String
 String of characters
 
 d) Average rainfall in September
-int or float
+int or double
 Depending on unit used (e.g. mm)
 
 e) Number of runs scored by a cricketer
-short
+int
 Will be a whole number from zero into the hundreds
 
 f) A telephone number, including area code
@@ -24,5 +24,5 @@ Although numeric, this is a string of characters - more likely to concatenate/sp
 may have special characters, and leading zero may matter
 
 g) A dress size
-byte
+int
 Will always be a whole number between 0 and 50

@@ -2,11 +2,11 @@ package com.sparta.breakeven;
 
 public class BreakEvenApp {
     public static void main(String[] args) {
-        float itemCost = 20.00f;
-        float salePrice = 40.00f;
-        float fixedCosts = 50000.00f;
+        double itemCost = 20.00d;
+        double salePrice = 40.00d;
+        double fixedCosts = 50000.00d;
 
-        float profitPerItem = salePrice - itemCost;
+        double profitPerItem = salePrice - itemCost;
         int breakeven = (int) Math.ceil(fixedCosts / profitPerItem);
 
         System.out.println("Sale price for each item: " + salePrice);
