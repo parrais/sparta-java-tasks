@@ -8,9 +8,9 @@ public class PaintApp {
         double boxLength = 0.6d;
         double boxWidth = 0.3d;
         double boxHeight = 0.35d;
-        double hallLength = 40f;
-        double hallWidth = 30f;
-        double hallHeight = 3.4f;
+        double hallLength = 40d;
+        double hallWidth = 30d;
+        double hallHeight = 3.4d;
 
         double hallSurfaceArea = hallHeight * 2 * (hallLength + hallWidth);
         int paintNeeded = (int) Math.ceil(hallSurfaceArea / paintPerCan);
