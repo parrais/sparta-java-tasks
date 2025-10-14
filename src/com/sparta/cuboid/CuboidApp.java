@@ -13,6 +13,6 @@ public class CuboidApp {
         int height = scanner.nextInt();
         int surfaceArea = 2 * (width * length + width * height + length * height);
         int volume = width * length * height;
-        System.out.printf("Your cuboid has surface area %d and volume %d", surfaceArea, volume);
+        System.out.printf("Your cuboid has surface area %d and volume %d.%n", surfaceArea, volume);
     }
 }

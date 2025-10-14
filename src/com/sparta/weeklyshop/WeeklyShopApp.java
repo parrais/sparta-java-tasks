@@ -28,6 +28,6 @@ public class WeeklyShopApp {
         int totalItems = peachesAmount + beansAmount + chickenAmount + socksAmount + waterAmount;
         double totalPrice = (double) peachesAmount * peachesPrice + (double) beansAmount * beansPrice
                 + (double) chickenAmount * chickenPrice + (double) socksAmount * socksPrice + (double) waterAmount * waterPrice;
-        System.out.printf("Total number of items purchased: %d%nYour weekly shop cost: %3.2f", totalItems, totalPrice);
+        System.out.printf("Total number of items purchased: %d%nYour weekly shop cost: %3.2f%n", totalItems, totalPrice);
     }
 }
