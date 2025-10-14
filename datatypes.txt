@@ -1,0 +1,28 @@
+a) A company's profit
+float
+May need 2 decimals (currency)
+
+b) A person's weight
+float
+May need decimals of a kg
+
+c) A book title
+String
+String of characters
+
+d) Average rainfall in September
+int or float
+Depending on unit used (e.g. mm)
+
+e) Number of runs scored by a cricketer
+short
+Will be a whole number from zero into the hundreds
+
+f) A telephone number, including area code
+String
+Although numeric, this is a string of characters - more likely to concatenate/split (area code/international)
+and leading zero may matter
+
+g) A dress size
+byte
+Will always be a whole number between 0 and 50
