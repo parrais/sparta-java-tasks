@@ -1,0 +1,8 @@
+a = 5, b = 4, c = 3
+
+a) (a < b)              false
+b) (a != b)             true
+c) (a > b) and (a < c)  false
+d) (a > b) or (a < c)   true
+e) (a - 1 == b)         true
+f) not(b > c)           false
