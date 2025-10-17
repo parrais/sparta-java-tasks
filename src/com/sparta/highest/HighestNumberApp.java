@@ -12,10 +12,9 @@ public class HighestNumberApp {
                 4, 9, 21, 11, 6, 25, 14, 2, 18, 30));
         System.out.println(getSecondHighestInt(numbers));
     }
-    private static int getSecondHighestInt(List inputNumbers){
+    private static int getSecondHighestInt(List<Integer> inputNumbers){
         List<Integer> sortingList = new ArrayList<Integer>(inputNumbers);
         Collections.sort(sortingList);
-        Collections.reverse(sortingList);
-        return sortingList.get(1);
+        return sortingList.get(sortingList.size()-2);
     }
 }

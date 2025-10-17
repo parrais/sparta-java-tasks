@@ -6,28 +6,28 @@ public class VowelApp {
     static void main() {
         Scanner scanner = new Scanner(System.in);
         String userInput = getStringEntry("Please input a phrase: ", scanner);
-        splitVowels(userInput);
+        String[] answers = splitVowels(userInput);
+        System.out.println("All of the vowels in upper case:\n" + answers[0] + "\nAll of the vowels removed:\n" + answers[1]);
         scanner.close();
     }
 
     private static String getStringEntry(String message, Scanner scan) {
         System.out.print(message);
-        String userString = scan.nextLine();
-        return userString;
+        return scan.nextLine();
     }
 
-    private static void splitVowels(String userMessage) {
+    private static String[] splitVowels(String userMessage) {
         char[] messageArray = userMessage.toCharArray();
-        String vowelsOnly = "";
-        String noVowels = "";
+        StringBuilder vowelsOnly = new StringBuilder();
+        StringBuilder noVowels = new StringBuilder();
         for (char letter: messageArray) {
             char caps = Character.toUpperCase(letter);
             if (caps == 'A' || caps == 'E' || caps == 'I' || caps == 'O' || caps == 'U'){
-                vowelsOnly += caps;
+                vowelsOnly.append(caps);
             } else {
-                noVowels += letter;
+                noVowels.append(letter);
             }
         }
-        System.out.println("All of the vowels in upper case:\n" + vowelsOnly + "\nAll of the vowels removed:\n" + noVowels);
+        return new String[]{vowelsOnly.toString(), noVowels.toString()};
     }
 }

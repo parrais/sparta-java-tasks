@@ -19,15 +19,15 @@ public class GridApp {
     }
 
     private static String buildGrid(int columns, int rows) {
-        String starRow = "";
+        StringBuilder starRow = new StringBuilder();
         for (int i = 0; i < columns; i++){
-            starRow += " *";
+            starRow.append(" *");
         }
-        String trimmedRow = starRow.trim() + "\n";
-        String starGrid = "";
+        String trimmedRow = starRow.toString().trim() + "\n";
+        StringBuilder starGrid = new StringBuilder();
         for (int j = 0; j < rows; j++){
-            starGrid += trimmedRow;
+            starGrid.append(trimmedRow);
         }
-    return starGrid;
+        return starGrid.toString();
     }
 }
