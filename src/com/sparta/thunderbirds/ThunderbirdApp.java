@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class ThunderbirdApp {
     static void main() {
         Scanner scanner = new Scanner(System.in);
-        int thunderbird = getEntry("Please input a Thunderbird number: ", scanner);
+        int thunderbird = getIntEntry("Please input a Thunderbird number: ", scanner);
         outputPilot(thunderbird);
         scanner.close();
     }
 
-    private static int getEntry(String message, Scanner scan) {
+    private static int getIntEntry(String message, Scanner scan) {
         System.out.print(message);
-        int userEntry = scan.nextInt();
-        return userEntry;
+        int userInt = scan.nextInt();
+        return userInt;
     }
 
     private static void outputPilot(int vehicle) {
