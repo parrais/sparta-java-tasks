@@ -1,0 +1,31 @@
+a) writing Christmas cards to family
+Deterministic
+Known list of recipients, standard greeting
+
+b) washing up
+Non-deterministic
+List of items to wash up will change every time
+
+c) reading a book
+Deterministic
+Start at page 1, read to end
+
+d) waiting for someone to answer the phone
+Non-deterministic
+Dependent on uncontrolled external activity
+
+e) counting to 10 in French
+Deterministic
+Numbers are fixed and known.
+
+f) playing a game of 501 in darts
+Deterministic
+Goal is always the same, and based on skill (assuming no external factors)
+
+g) laying the table for a dinner party
+Non-deterministic
+Dependent on guests, no of courses, etc.
+
+h) answering this question
+Non-deterministic
+Opinions may vary
