@@ -10,7 +10,6 @@ public class AveragePosNegApp {
         int[] inputs = getTenInputs(scanner);
         scanner.close();
         double[] outputs = calculateOutputs(inputs);
-        System.out.println(Arrays.toString(inputs) + Arrays.toString(outputs));
         produceLog(outputs);
     }
 
