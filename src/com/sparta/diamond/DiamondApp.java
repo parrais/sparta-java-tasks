@@ -1,6 +1,5 @@
 package com.sparta.diamond;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class DiamondApp {
