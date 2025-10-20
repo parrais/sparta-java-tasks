@@ -23,16 +23,17 @@ public class DiamondApp {
         }
         String[] diamondRows = new String[2 * width - 1];
         for (int i = 0; i < width; i++) {
-            String row = "";
+            StringBuilder row = new StringBuilder();
             for (int j = 0; j < width - i - 1; j++) {
-                row += " ";
+                row.append(" ");
             }
-            row += "*";
+            row.append("*");
             for (int k = 0; k < i; k++) {
-                row += " *";
+                row.append(" *");
             }
-            diamondRows[i] = row;
-            diamondRows[2 * width - i - 2] = row;
+            String diamondRow = row.toString();
+            diamondRows[i] = diamondRow;
+            diamondRows[2 * width - i - 2] = diamondRow;
         }
         return String.join("\n", diamondRows);
     }
